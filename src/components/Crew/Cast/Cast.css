@@ -1,0 +1,17 @@
+.castimg {
+  max-width: 150px;
+  border-radius: 5px;
+}
+.crew {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1c2833;
+}
+.carousel-img {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}

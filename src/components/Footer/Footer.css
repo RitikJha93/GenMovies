@@ -1,0 +1,16 @@
+.footer {
+  background-color: black;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+@media (max-width: 340px) {
+  .footer p {
+    font-size: 0.8rem;
+  }
+}
