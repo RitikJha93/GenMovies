@@ -37,7 +37,7 @@ export default class TvShows extends Component {
       totalPages: total_results
     });
   }
-
+ 
   //fetching the data for infinite scrolling
   fetchMoreData = async () => {
     this.setState({ page: this.state.page + 1 });

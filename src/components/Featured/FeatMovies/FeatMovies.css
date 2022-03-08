@@ -31,6 +31,11 @@
   margin: 2px 9px;
   box-shadow: 2px 2px 3px 3px black;
 }
+.container .img-box .imgs:hover{
+  transform: scale(1.2);
+  border-radius: 5px;
+
+}
 .link {
   color: white;
   text-decoration: none;
@@ -38,6 +43,7 @@
 }
 .link:hover {
   color: grey;
+
 }
 
 @media (max-width: 650px) {
