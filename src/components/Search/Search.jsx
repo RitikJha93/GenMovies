@@ -5,11 +5,16 @@ import Loader from "../Loader";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function Search({ name, type, func, medtype }) {
+  // setting results
   const [pic, setPic] = useState([]);
   const [loading, setLoading] = useState(false);
+  //setting the name of the movie searched
   const [num, setNUm] = useState(name);
+  //setting the the media type whether it's a movie or a tv show show 
   const [show, setShow] = useState(type);
+  //setting page
   const [pg, setPage] = useState(0);
+  //setting the total pages
   const [totalPages, settotalPages] = useState(0);
 
   const fetchData = async () => {
@@ -17,6 +22,7 @@ export default function Search({ name, type, func, medtype }) {
     setLoading(true);
     const data = await fetch(mainUrl);
     const response = await data.json();
+    //getting the results of the movie searche, the page and the total results available for a particular movie
     const { results, page, total_results } = response;
     setPic(results);
     setLoading(false);

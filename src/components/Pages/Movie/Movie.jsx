@@ -78,6 +78,7 @@ export default class Movie extends Component {
     }, 1000);
   };
   render() {
+    //poster image link
     let url = "https://image.tmdb.org/t/p/w300";
 
     window.onload = () => {
